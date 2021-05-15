@@ -1,4 +1,4 @@
-import './App.css';
+import './App.css'
 import Header      from './components/Header.js'
 import Description from './components/Description.js'
 import Card        from './components/Card.js'
@@ -17,4 +17,4 @@ function App() {
   );
 }
 
-export default App;
+export default App

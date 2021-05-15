@@ -1,4 +1,16 @@
+import axios from 'axios'
+
 function Card() {
+  axios.get('https://kitsu.io/api/edge/anime?filter[categories]=adventure', {
+    headers: {
+      'Accept': 'application/vnd.api+json',
+      'Content-Type': 'application/vnd.api+json'
+    }
+  })
+    .then(response => {
+      console.log(response)
+    })
+
   return (
     <article className="card">
       <figure className="figure">

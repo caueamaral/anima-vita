@@ -46,14 +46,14 @@ body {
 
 .card {
   border: 1px solid;
-  height: 400px;
+  /* height: 400px; */
   padding: 20px;
   width: 300px;
 }
 
 .figure {
   border: 1px solid;
-  height: 200px;
+  /* height: 200px; */
   margin: 0 auto;
   width: 150px;
 }

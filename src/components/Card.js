@@ -1,28 +1,48 @@
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import axios         from 'axios'
 
 function Card() {
+  const [cards, setCards] = useState([])
+
    useEffect(() => {
-    axios.get('https://kitsu.io/api/edge/anime?filter[categories]=adventure', {
+    const apiUrl = 'https://kitsu.io/api/edge/anime'
+
+    axios.get(apiUrl, {
       headers: {
-        'Accept': 'application/vnd.api+json',
+        'Accept':       'application/vnd.api+json',
         'Content-Type': 'application/vnd.api+json'
       }
     })
-      .then(response => {
-        console.log(response)
-      })  
+      .then(response => setCards(response.data.data))
   }, [])
 
   return (
-    <article className="card">
-      <figure className="figure">
-        <p>imagem do personagem</p>
-      </figure>
-      <h4>Nome principal do personagem</h4>
-      <p>Breve descrição do personagem.</p>
-      <small>Outros nomes, se houver</small>
-    </article>
+    <div>
+      {cards.map(card => {
+        let {
+          posterImage: {medium},
+          canonicalTitle,
+          description
+        } = card.attributes
+
+        return (
+          <article className="card" key={card.id}>
+            <figure className="figure">
+              <p>
+                <img src={medium} />
+              </p>
+            </figure>
+            <h4>
+              {canonicalTitle}
+            </h4>
+            <p>
+              {description}
+            </p>
+            <small>Outros nomes, se houver</small>
+          </article>
+        )
+      })}
+    </div>
   )
 }
 

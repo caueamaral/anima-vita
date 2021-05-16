@@ -34,7 +34,7 @@ select {
   --white:    #fff;
   --green:    #42cca2;
   --blue:     #185b9d;
-  --gray:     #aaa;
+  --gray:     #999;
   --lightGray:#eee;
   --titleFont:'Patrick Hand';
 }
@@ -52,24 +52,41 @@ body {
 }
 
 
+/* ----- app ----- */
+.app {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+}
+
+
 
 /* ----- header ----- */
 .header {
-  background: var(--white);
+  align-items: center;
   font-family: var(--titleFont);
-  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
   text-align: center;
 }
 
 .header-title {
+  background: var(--white);
+  border-radius: 5px;
   font-size: 38px;
   letter-spacing: 3px;
+  padding: 15px 25px;
 }
 
 .header-subtitle {
+  background: var(--white);
+  border-radius: 5px;
   font-size: 18px;
   letter-spacing: 1px;
   margin-top: 15px;
+  padding: 10px 20px;
 }
 
 .header-emphasis {

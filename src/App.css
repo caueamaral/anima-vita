@@ -31,10 +31,17 @@ select {
 
 /* ----- variables ----- */
 :root {
-  --white:     #fff;
-  --gray:      #aaa;
-  --lightGray: #eee;
+  --primaryColor: #060;
+  --white:        #fff;
+  --gray:         #aaa;
+  --lightGray:    #eee;
+  --titleFont:    'Patrick Hand';
 }
+
+
+
+/* ----- fonts ----- */
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Patrick+Hand&display=swap');
 
 
 
@@ -44,22 +51,29 @@ body {
 }
 
 .main {
-  padding: 40px;
+  padding: 60px 40px;
 }
+
 
 
 /* ----- header ----- */
 .header {
   background: var(--white);
+  border-bottom: 2px solid var(--primaryColor);
+  font-family: var(--titleFont);
   padding: 40px 20px;
   text-align: center;
 }
 
 .header-title {
-  font-size: 30px;
+  color: var(--primaryColor);
+  font-size: 38px;
+  letter-spacing: 4px;
 }
 
 .header-subtitle {
+  font-size: 18px;
+  letter-spacing: 1px;
   margin-top: 20px;
 }
 
@@ -78,15 +92,20 @@ body {
 
 .card-item {
   background: var(--white);
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, .15);
   padding: 20px;
 }
 
 .card-image {
+  border-radius: 5px;
   width: 100%;
 }
 
 .card-title {
-  font-size: 16px;
+  font-family: var(--title-font);
+  font-size: 20px;
+  letter-spacing: 1px;
   margin-top: 10px;
 }
 
@@ -99,6 +118,10 @@ body {
 /* ----- footer ----- */
 .footer {
   background: var(--white);
+  border-top: 2px solid var(--primaryColor);
+  font-family: var(--titleFont);
+  font-size: 18px;
+  letter-spacing: 1px;
   padding: 40px 20px;
   text-align: center;
 }

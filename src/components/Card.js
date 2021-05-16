@@ -17,7 +17,7 @@ function Card() {
   }, [])
 
   return (
-    <div>
+    <section className="card-container">
       {cards.map(card => {
         let {
           posterImage: {medium},
@@ -26,10 +26,10 @@ function Card() {
         } = card.attributes
 
         return (
-          <article className="card" key={card.id}>
+          <article className="card-item" key={card.id}>
             <figure className="figure">
               <p>
-                <img src={medium} />
+                <img src={medium} className="card-image" />
               </p>
             </figure>
             <h4>
@@ -42,7 +42,7 @@ function Card() {
           </article>
         )
       })}
-    </div>
+    </section>
   )
 }
 

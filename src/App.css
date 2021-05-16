@@ -44,16 +44,15 @@ body {
   padding: 20px;
 }
 
-.card {
-  border: 1px solid;
-  /* height: 400px; */
-  padding: 20px;
-  width: 300px;
+
+
+/* ----- cards ---- */
+.card-container {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
 }
 
-.figure {
-  border: 1px solid;
-  /* height: 200px; */
-  margin: 0 auto;
-  width: 150px;
+.card-image {
+  width: 100%;
 }

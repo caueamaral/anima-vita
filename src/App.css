@@ -31,11 +31,12 @@ select {
 
 /* ----- variables ----- */
 :root {
-  --primaryColor: #060;
-  --white:        #fff;
-  --gray:         #aaa;
-  --lightGray:    #eee;
-  --titleFont:    'Patrick Hand';
+  --white:    #fff;
+  --green:    #42cca2;
+  --blue:     #185b9d;
+  --gray:     #aaa;
+  --lightGray:#eee;
+  --titleFont:'Patrick Hand';
 }
 
 
@@ -47,11 +48,7 @@ select {
 
 /* ----- styles ----- */
 body {
-  background: var(--lightGray);
-}
-
-.main {
-  padding: 60px 40px;
+  background: linear-gradient(to right, var(--green), var(--blue));
 }
 
 
@@ -59,26 +56,31 @@ body {
 /* ----- header ----- */
 .header {
   background: var(--white);
-  border-bottom: 2px solid var(--primaryColor);
   font-family: var(--titleFont);
-  padding: 40px 20px;
+  padding: 30px 20px;
   text-align: center;
 }
 
 .header-title {
-  color: var(--primaryColor);
   font-size: 38px;
-  letter-spacing: 4px;
+  letter-spacing: 3px;
 }
 
 .header-subtitle {
   font-size: 18px;
   letter-spacing: 1px;
-  margin-top: 20px;
+  margin-top: 15px;
 }
 
 .header-emphasis {
   color: var(--gray);
+}
+
+
+
+/* ----- main ----- */
+.main {
+  padding: 60px 40px;
 }
 
 
@@ -118,14 +120,21 @@ body {
 /* ----- footer ----- */
 .footer {
   background: var(--white);
-  border-top: 2px solid var(--primaryColor);
   font-family: var(--titleFont);
   font-size: 18px;
   letter-spacing: 1px;
-  padding: 40px 20px;
+  padding: 30px 20px;
   text-align: center;
 }
 
 .footer-emphasis {
   color: var(--gray);
+}
+
+.footer-green {
+  color: var(--green);
+}
+
+.footer-blue {
+  color: var(--blue);
 }

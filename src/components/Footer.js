@@ -3,7 +3,9 @@ function Footer() {
     <footer className="footer">
       <p>
         <strong>
-          <em className="footer-emphasis">AnimaVita</em> 2021 - All rights reserved.
+          <em className="footer-emphasis">
+            <span className="footer-green">Anima</span><span className="footer-blue">Vita</span>
+          </em> 2021 - All rights reserved.
         </strong>
       </p>
     </footer>

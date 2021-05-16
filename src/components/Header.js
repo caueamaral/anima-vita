@@ -1,8 +1,12 @@
 function Header() {
   return (
-    <header>
-      <h1>AnimaVita</h1>
-      <h2>Consultas online com animes e mangás</h2>
+    <header className="header">
+      <h1 className="header-title">
+        AnimaVita
+      </h1>
+      <h2 className="header-subtitle">
+        Online query with <em className="header-emphasis">animes</em> and <em className="header-emphasis">mangas</em>
+      </h2>
     </header>
   )
 }

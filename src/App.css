@@ -17,31 +17,54 @@ menu, nav, output, section, summary {
   -webkit-font-smoothing: antialiased;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+}
+
 html,
 input,
 select {
-  font: 17px/22px Verdana;
+  font: 14px/1.5em Verdana;
 }
 
 
 
 /* ----- variables ----- */
 :root {
-  --white: #fff;
-  --gray: #eee;
+  --white:     #fff;
+  --gray:      #aaa;
+  --lightGray: #eee;
 }
 
 
 
 /* ----- styles ----- */
 body {
-  background: var(--white);
-  padding: 30px;
+  background: var(--lightGray);
 }
 
-.app {
-  background: var(--gray);
-  padding: 20px;
+.main {
+  padding: 40px;
+}
+
+
+/* ----- header ----- */
+.header {
+  background: var(--white);
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.header-title {
+  font-size: 30px;
+}
+
+.header-subtitle {
+  margin-top: 20px;
+}
+
+.header-emphasis {
+  color: var(--gray);
 }
 
 
@@ -49,10 +72,37 @@ body {
 /* ----- cards ---- */
 .card-container {
   display: grid;
-  grid-gap: 20px;
+  grid-gap: 40px;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+
+.card-item {
+  background: var(--white);
+  padding: 20px;
 }
 
 .card-image {
   width: 100%;
+}
+
+.card-title {
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.card-description {
+  margin-top: 10px;
+}
+
+
+
+/* ----- footer ----- */
+.footer {
+  background: var(--white);
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.footer-emphasis {
+  color: var(--gray);
 }

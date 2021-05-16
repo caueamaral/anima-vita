@@ -1,8 +1,10 @@
 function Footer() {
   return (
-    <footer>
+    <footer className="footer">
       <p>
-        <strong>AnimaVita 2021 - Todos os direitos reservados.</strong>
+        <strong>
+          <em className="footer-emphasis">AnimaVita</em> 2021 - All rights reserved.
+        </strong>
       </p>
     </footer>
   )

@@ -32,13 +32,15 @@ function Card() {
                 <img src={medium} className="card-image" />
               </p>
             </figure>
-            <h4>
+            <h2 className="card-title">
               {canonicalTitle}
-            </h4>
-            <p>
-              {description}
+            </h2>
+            <p className="card-description">
+              {description.substring(0, 150)}...
             </p>
-            <small>Outros nomes, se houver</small>
+            <small>
+              Outros nomes, se houver
+            </small>
           </article>
         )
       })}

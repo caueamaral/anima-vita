@@ -70,35 +70,3 @@ body {
   max-width: calc(100% - 80px);
   width: 1600px;
 }
-
-
-
-/* ----- cards ---- */
-.card-container {
-  display: grid;
-  grid-gap: 40px;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-}
-
-.card-item {
-  background: var(--white);
-  border-radius: var(--rounded);
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, .15);
-  padding: 20px;
-}
-
-.card-image {
-  border-radius: var(--rounded);
-  width: 100%;
-}
-
-.card-title {
-  font-family: var(--title-font);
-  font-size: 16px;
-  letter-spacing: 1px;
-  margin-top: 10px;
-}
-
-.card-description {
-  margin-top: 10px;
-}

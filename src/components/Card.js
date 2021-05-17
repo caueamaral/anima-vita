@@ -1,5 +1,35 @@
 import { useEffect, useState } from 'react'
-import axios         from 'axios'
+import axios                   from 'axios'
+import styled                  from 'styled-components'
+
+const Container = styled.section`
+  display: grid;
+  grid-gap: 40px;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+
+  article {
+    background: var(--white);
+    border-radius: var(--rounded);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .15);
+    padding: 20px;
+  }
+
+  img {
+    border-radius: var(--rounded);
+    width: 100%;
+  }
+
+  h3 {
+    font-family: var(--title-font);
+    font-size: 16px;
+    letter-spacing: 1px;
+    margin-top: 10px;
+  }
+
+  p {
+    margin-top: 10px;
+  }
+`
 
 function Card() {
   const [cards, setCards] = useState([])
@@ -17,7 +47,7 @@ function Card() {
   }, [])
 
   return (
-    <section className="card-container">
+    <Container>
       {cards.map(card => {
         let {
           posterImage: {medium},
@@ -26,16 +56,16 @@ function Card() {
         } = card.attributes
 
         return (
-          <article className="card-item" key={card.id}>
-            <figure className="figure">
+          <article key={card.id}>
+            <figure>
               <p>
-                <img src={medium} className="card-image" />
+                <img src={medium} />
               </p>
             </figure>
-            <h2 className="card-title">
+            <h3>
               {canonicalTitle}
-            </h2>
-            <p className="card-description">
+            </h3>
+            <p>
               {description.substring(0, 150)}...
             </p>
             <small>
@@ -44,7 +74,7 @@ function Card() {
           </article>
         )
       })}
-    </section>
+    </Container>
   )
 }
 

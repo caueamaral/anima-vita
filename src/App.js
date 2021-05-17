@@ -1,7 +1,7 @@
-import './App.css'
-import Header from './components/Header/index.js'
-import Main   from './components/Main/index.js'
-import Footer from './components/Footer/index.js'
+import Header      from './components/Header/index.js'
+import Main        from './components/Main/index.js'
+import Footer      from './components/Footer/index.js'
+import GlobalStyle from './GlobalStyle.js'
 
 function App() {
   return (
@@ -9,6 +9,7 @@ function App() {
       <Header />
       <Main />
       <Footer />
+      <GlobalStyle />
     </div>
   );
 }

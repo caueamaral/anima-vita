@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-const Container = styled.footer`
+const FooterWrapper = styled.footer`
   background: var(--white);
   font-family: var(--titleFont);
   font-size: 18px;
@@ -20,12 +20,12 @@ const Container = styled.footer`
 
 function Footer() {
   return (
-    <Container>
+    <FooterWrapper>
       <strong>
         <span className="green">Anima</span>
         <span className="blue">Vita</span> 2021 - All rights reserved.
       </strong>
-    </Container>
+    </FooterWrapper>
   )
 }
 

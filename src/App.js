@@ -4,7 +4,7 @@ import Main   from './components/Main.js'
 import Footer from './components/Footer.js'
 import styled from 'styled-components'
 
-const Container = styled.div`
+const AppWrapper = styled.div`
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -14,11 +14,11 @@ const Container = styled.div`
 
 function App() {
   return (
-    <Container>
+    <AppWrapper>
       <Header />
       <Main />
       <Footer />
-    </Container>
+    </AppWrapper>
   );
 }
 

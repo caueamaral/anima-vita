@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-const Container = styled.header`
+const HeaderWrapper = styled.header`
   align-items: center;
   font-family: var(--titleFont);
   display: flex;
@@ -40,14 +40,14 @@ const Container = styled.header`
 
 function Header() {
   return (
-    <Container>
+    <HeaderWrapper>
       <h1>
         <span className="green">Anima</span><span className="blue">Vita</span>
       </h1>
       <h2>
         Online query with <em>animes</em> and <em>mangas</em>
       </h2>
-    </Container>
+    </HeaderWrapper>
   )
 }
 

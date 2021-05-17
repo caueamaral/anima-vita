@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import axios                   from 'axios'
 import styled                  from 'styled-components'
 
-const Container = styled.section`
+const CardWrapper = styled.section`
   display: grid;
   grid-gap: 40px;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
@@ -47,7 +47,7 @@ function Card() {
   }, [])
 
   return (
-    <Container>
+    <CardWrapper>
       {cards.map(card => {
         let {
           posterImage: {medium},
@@ -74,7 +74,7 @@ function Card() {
           </article>
         )
       })}
-    </Container>
+    </CardWrapper>
   )
 }
 

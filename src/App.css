@@ -54,6 +54,7 @@ body {
 
 /* ----- app ----- */
 .app {
+  align-items: center;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -97,7 +98,9 @@ body {
 
 /* ----- main ----- */
 .main {
-  padding: 60px 40px;
+  margin: 60px 0;
+  max-width: calc(100% - 80px);
+  width: 1600px;
 }
 
 
@@ -123,7 +126,7 @@ body {
 
 .card-title {
   font-family: var(--title-font);
-  font-size: 20px;
+  font-size: 16px;
   letter-spacing: 1px;
   margin-top: 10px;
 }
@@ -142,6 +145,7 @@ body {
   letter-spacing: 1px;
   padding: 30px 20px;
   text-align: center;
+  width: 100%;
 }
 
 .footer-emphasis {

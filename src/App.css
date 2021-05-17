@@ -53,6 +53,7 @@ body {
 }
 
 
+
 /* ----- app ----- */
 .app {
   align-items: center;
@@ -60,13 +61,4 @@ body {
   flex-direction: column;
   justify-content: space-between;
   min-height: 100vh;
-}
-
-
-
-/* ----- main ----- */
-.main {
-  margin: 60px 0;
-  max-width: calc(100% - 80px);
-  width: 1600px;
 }

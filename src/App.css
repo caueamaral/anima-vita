@@ -51,14 +51,3 @@ select {
 body {
   background: linear-gradient(to right, var(--green), var(--blue));
 }
-
-
-
-/* ----- app ----- */
-.app {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  min-height: 100vh;
-}

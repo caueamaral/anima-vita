@@ -64,39 +64,6 @@ body {
 
 
 
-/* ----- header ----- */
-.header {
-  align-items: center;
-  font-family: var(--titleFont);
-  display: flex;
-  flex-direction: column;
-  margin-top: 40px;
-  text-align: center;
-}
-
-.header-title {
-  background: var(--white);
-  border-radius: var(--rounded);
-  font-size: 38px;
-  letter-spacing: 3px;
-  padding: 15px 25px;
-}
-
-.header-subtitle {
-  background: var(--white);
-  border-radius: var(--rounded);
-  font-size: 18px;
-  letter-spacing: 1px;
-  margin-top: 15px;
-  padding: 10px 20px;
-}
-
-.header-emphasis {
-  color: var(--gray);
-}
-
-
-
 /* ----- main ----- */
 .main {
   margin: 60px 0;

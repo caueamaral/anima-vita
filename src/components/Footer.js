@@ -10,11 +10,11 @@ const Container = styled.footer`
   width: 100%;
 
   .green {
-    color: #42cca2;
+    color: var(--green);
   }
 
   .blue {
-    color: #185b9d;
+    color: var(--blue);
   }
 `
 

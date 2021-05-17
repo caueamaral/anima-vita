@@ -1,4 +1,3 @@
-import Card   from './Card.js'
 import styled from 'styled-components'
 
 const MainWrapper = styled.main`
@@ -7,12 +6,4 @@ const MainWrapper = styled.main`
   width: 1600px;
 `
 
-function Main() {
-  return (
-    <MainWrapper>
-      <Card />
-    </MainWrapper>
-  )
-}
-
-export default Main
+export default MainWrapper

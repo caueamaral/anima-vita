@@ -135,28 +135,3 @@ body {
 .card-description {
   margin-top: 10px;
 }
-
-
-
-/* ----- footer ----- */
-.footer {
-  background: var(--white);
-  font-family: var(--titleFont);
-  font-size: 18px;
-  letter-spacing: 1px;
-  padding: 30px 20px;
-  text-align: center;
-  width: 100%;
-}
-
-.footer-emphasis {
-  color: var(--gray);
-}
-
-.footer-green {
-  color: var(--green);
-}
-
-.footer-blue {
-  color: var(--blue);
-}

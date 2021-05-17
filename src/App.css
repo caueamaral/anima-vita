@@ -36,6 +36,7 @@ select {
   --blue:     #185b9d;
   --gray:     #999;
   --lightGray:#eee;
+  --rounded:  5px;
   --titleFont:'Patrick Hand';
 }
 
@@ -75,7 +76,7 @@ body {
 
 .header-title {
   background: var(--white);
-  border-radius: 5px;
+  border-radius: var(--rounded);
   font-size: 38px;
   letter-spacing: 3px;
   padding: 15px 25px;
@@ -83,7 +84,7 @@ body {
 
 .header-subtitle {
   background: var(--white);
-  border-radius: 5px;
+  border-radius: var(--rounded);
   font-size: 18px;
   letter-spacing: 1px;
   margin-top: 15px;
@@ -114,13 +115,13 @@ body {
 
 .card-item {
   background: var(--white);
-  border-radius: 5px;
+  border-radius: var(--rounded);
   box-shadow: 5px 5px 10px rgba(0, 0, 0, .15);
   padding: 20px;
 }
 
 .card-image {
-  border-radius: 5px;
+  border-radius: var(--rounded);
   width: 100%;
 }
 

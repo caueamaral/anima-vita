@@ -27,6 +27,11 @@ const CardWrapper = styled.section`
   p {
     margin-top: 10px;
   }
+
+  small {
+    display: block;
+    margin-top: 10px;
+  }
 `
 
 export default CardWrapper

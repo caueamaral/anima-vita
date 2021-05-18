@@ -23,7 +23,8 @@ function Card() {
         let {
           posterImage: {medium},
           canonicalTitle,
-          description
+          description,
+          titles
         } = card.attributes
 
         return (
@@ -40,7 +41,9 @@ function Card() {
               {description.substring(0, 150)}...
             </p>
             <small>
-              Outros nomes, se houver
+              <strong>En:</strong> {titles.en}<br />              
+              <strong>En Jp:</strong> {titles.en_jp}<br />
+              <strong>Ja Jp:</strong> {titles.ja_jp}
             </small>
           </article>
         )

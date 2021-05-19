@@ -37,9 +37,7 @@ function Card() {
         return (
           <article key={card.id}>
             <figure>
-              <p>
-                <img src={medium} alt={canonicalTitle} />
-              </p>
+              <img src={medium} alt={canonicalTitle} />
             </figure>
             <h3>
               {canonicalTitle}

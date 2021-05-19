@@ -7,7 +7,7 @@ function Header() {
         <span className="green">Anima</span><span className="blue">Vita</span>
       </h1>
       <h2>
-        Online query with <em>animes</em> and <em>mangas</em>
+        Online <em>animes</em> and <em>mangas</em> query
       </h2>
     </HeaderWrapper>
   )

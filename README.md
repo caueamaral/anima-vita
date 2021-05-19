@@ -1,7 +1,9 @@
 # AnimaVita
 
-Consultas online com animes e mangás.
+Consultas online com animes e mangás desenvolvido em ReactJS.
 [Visualizar Projeto](http://caueamaral.github.io/anima-vita).
+
+<img src="src/images/anima-vita.jpg" alt="Anima Vita">
 
 ## Criado com ReactJS
 - useState()

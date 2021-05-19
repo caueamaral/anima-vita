@@ -17,6 +17,16 @@ function Card() {
       .then(response => setCards(response.data.data))
   }, [])
 
+  const renderIdiom = (title, idiom) => {
+    if (idiom) {
+      return (
+        <>
+          <strong>{title}: </strong>{idiom}
+        </>
+      )
+    }
+  }
+
   return (
     <CardWrapper>
       {cards.map(card => {
@@ -41,9 +51,9 @@ function Card() {
               {description.substring(0, 150)}...
             </p>
             <small>
-              <strong>En:</strong> {titles.en}<br />              
-              <strong>En Jp:</strong> {titles.en_jp}<br />
-              <strong>Ja Jp:</strong> {titles.ja_jp}
+              {renderIdiom('En',    titles.en)}   <br />
+              {renderIdiom('En Jp', titles.en_jp)}<br />
+              {renderIdiom('Ja Jp', titles.ja_jp)}
             </small>
           </article>
         )

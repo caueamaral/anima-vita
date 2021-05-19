@@ -1,7 +1,6 @@
 # AnimaVita
 
-Consultas online com animes e mangás desenvolvido em ReactJS.
-[Visualizar Projeto](http://caueamaral.github.io/anima-vita).
+Consulta de animes e mangás à API [Kitsu](//kitsu.docs.apiary.io/) com ReactJS. [Visualizar Projeto](//caueamaral.github.io/anima-vita).
 
 <img src="src/images/anima-vita.jpg" alt="Anima Vita">
 

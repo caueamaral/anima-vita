@@ -6,14 +6,11 @@ function Card() {
   const [cards, setCards] = useState([])
 
    useEffect(() => {
-    const apiUrl = 'https://kitsu.io/api/edge/anime'
+    const apiUrl     = 'https://kitsu.io/api/edge/anime'
+    const apiHeaders = {'Accept': 'application/vnd.api+json', 'Content-Type': 'application/vnd.api+json'}
 
-    axios.get(apiUrl, {
-      headers: {
-        'Accept':       'application/vnd.api+json',
-        'Content-Type': 'application/vnd.api+json'
-      }
-    })
+    axios
+      .get(apiUrl, { headers: apiHeaders })
       .then(response => setCards(response.data.data))
   }, [])
 

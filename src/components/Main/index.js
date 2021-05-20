@@ -4,7 +4,7 @@ import MainWrapper from './styles.js'
 function Main(props) {
   return (
     <MainWrapper>
-      <Card setLoading={props.setLoading} />
+      <Card setLoading={props.setLoading} layout={props.layout} />
     </MainWrapper>
   )
 }

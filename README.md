@@ -9,8 +9,9 @@ Consulta de animes e mangás à API [Kitsu](//kitsu.docs.apiary.io/) com ReactJS
 - useEffetc()
 - styled-components
 - axios
-- react-spinners
 - classnames
+- react-icons
+- react-spinners
 
 ### Visualizar
 

@@ -8,6 +8,7 @@ import GlobalStyle from './GlobalStyle.js'
 
 function App() {
   const [loading, setLoading] = useState(false)
+  const [layout,   setLayout] = useState('column')
 
   useEffect(() => {
     setLoading(true)
@@ -15,11 +16,11 @@ function App() {
 
   return (
     <div className="app">
-      <Header />
+      <Header layout={layout} setLayout={setLayout} />
       {
         loading
-          ? <ClipLoader color="#fff" size="50" />
-          : <Main setLoading={setLoading} />
+          ? <ClipLoader color="#fff" size="50px" />
+          : <Main setLoading={setLoading} layout={layout} />
       }
       <Footer />
       <GlobalStyle />

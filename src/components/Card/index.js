@@ -6,7 +6,6 @@ import CardWrapper             from './styles.js'
 function Card(props) {
   const [cards,      setCards]      = useState([])
   const [visibility, setVisibility] = useState('hidden')
-  const [layout,     setLayout]     = useState('column')
 
    useEffect(() => {
     const apiUrl     = 'https://kitsu.io/api/edge/anime'
@@ -33,7 +32,7 @@ function Card(props) {
   }
 
   return (
-    <CardWrapper className={classNames(visibility, layout)}>
+    <CardWrapper className={classNames(visibility, props.layout)}>
       {cards.map(card => {
         let {
           posterImage: {medium},

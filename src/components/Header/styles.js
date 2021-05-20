@@ -31,10 +31,25 @@ const HeaderWrapper = styled.header`
     letter-spacing: 1px;
     margin-top: 15px;
     padding: 10px 20px;
+
+    em {
+      color: var(--gray);
+    }
   }
 
-  em {
-    color: var(--gray);
+  @media (max-width:499px) {
+    .icon {
+      display: none;
+    }
+  }
+
+  @media (min-width:500px) {
+    .icon {
+      cursor: pointer;
+      position: absolute;
+      right: 40px;
+      top: 40px;
+    }
   }
 `
 

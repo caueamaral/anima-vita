@@ -3,16 +3,18 @@ import axios                   from 'axios'
 import CardWrapper             from './styles.js'
 
 function Card(props) {
-  const [cards, setCards] = useState([])
+  const [cards, setCards]           = useState([])
+  const [visibility, setVisibility] = useState('hidden')
 
    useEffect(() => {
     const apiUrl     = 'https://kitsu.io/api/edge/anime'
     const apiHeaders = {'Accept': 'application/vnd.api+json', 'Content-Type': 'application/vnd.api+json'}
 
     axios
-      .get(apiUrl, { headers: apiHeaders })
+      .get(apiUrl, {headers: apiHeaders})
       .then(response => {
         props.setLoading(false)
+        setVisibility('visible')
 
         setCards(response.data.data)
       })
@@ -29,7 +31,7 @@ function Card(props) {
   }
 
   return (
-    <CardWrapper>
+    <CardWrapper className={visibility}>
       {cards.map(card => {
         let {
           posterImage: {medium},

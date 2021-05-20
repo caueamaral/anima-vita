@@ -4,6 +4,17 @@ const CardWrapper = styled.section`
   display: grid;
   grid-gap: 40px;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  transition: opacity .3s;
+
+  &.hidden {
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  &.visible {
+    opacity: 1;
+    visibility: visible;
+  }
 
   article {
     background: var(--white);

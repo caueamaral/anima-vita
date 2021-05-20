@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import axios                   from 'axios'
 import CardWrapper             from './styles.js'
 
-function Card() {
+function Card(props) {
   const [cards, setCards] = useState([])
 
    useEffect(() => {
@@ -11,8 +11,12 @@ function Card() {
 
     axios
       .get(apiUrl, { headers: apiHeaders })
-      .then(response => setCards(response.data.data))
-  }, [])
+      .then(response => {
+        props.setLoading(false)
+
+        setCards(response.data.data)
+      })
+  }, [props])
 
   const renderIdiom = (title, idiom) => {
     if (idiom) {

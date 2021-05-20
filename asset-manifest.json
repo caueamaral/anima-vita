@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.js": "/anima-vita/static/js/main.f7897eb8.chunk.js",
-    "main.js.map": "/anima-vita/static/js/main.f7897eb8.chunk.js.map",
+    "main.js": "/anima-vita/static/js/main.0ce5a51b.chunk.js",
+    "main.js.map": "/anima-vita/static/js/main.0ce5a51b.chunk.js.map",
     "runtime-main.js": "/anima-vita/static/js/runtime-main.3cd498e8.js",
     "runtime-main.js.map": "/anima-vita/static/js/runtime-main.3cd498e8.js.map",
-    "static/js/2.6ef6e640.chunk.js": "/anima-vita/static/js/2.6ef6e640.chunk.js",
-    "static/js/2.6ef6e640.chunk.js.map": "/anima-vita/static/js/2.6ef6e640.chunk.js.map",
+    "static/js/2.cc7a699f.chunk.js": "/anima-vita/static/js/2.cc7a699f.chunk.js",
+    "static/js/2.cc7a699f.chunk.js.map": "/anima-vita/static/js/2.cc7a699f.chunk.js.map",
     "index.html": "/anima-vita/index.html",
-    "static/js/2.6ef6e640.chunk.js.LICENSE.txt": "/anima-vita/static/js/2.6ef6e640.chunk.js.LICENSE.txt"
+    "static/js/2.cc7a699f.chunk.js.LICENSE.txt": "/anima-vita/static/js/2.cc7a699f.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.3cd498e8.js",
-    "static/js/2.6ef6e640.chunk.js",
-    "static/js/main.f7897eb8.chunk.js"
+    "static/js/2.cc7a699f.chunk.js",
+    "static/js/main.0ce5a51b.chunk.js"
   ]
 }

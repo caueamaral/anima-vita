@@ -1,10 +1,12 @@
 import { useEffect, useState } from 'react'
+import classNames              from 'classnames'
 import axios                   from 'axios'
 import CardWrapper             from './styles.js'
 
 function Card(props) {
   const [cards, setCards]           = useState([])
   const [visibility, setVisibility] = useState('hidden')
+  const [layout, setLayout]         = useState('column')
 
    useEffect(() => {
     const apiUrl     = 'https://kitsu.io/api/edge/anime'
@@ -31,7 +33,7 @@ function Card(props) {
   }
 
   return (
-    <CardWrapper className={visibility}>
+    <CardWrapper className={classNames(visibility, layout)}>
       {cards.map(card => {
         let {
           posterImage: {medium},
@@ -45,17 +47,19 @@ function Card(props) {
             <figure>
               <img src={medium} alt={canonicalTitle} />
             </figure>
-            <h3>
-              {canonicalTitle}
-            </h3>
-            <p>
-              {description.substring(0, 150)}...
-            </p>
-            <small>
-              {renderIdiom('En',    titles.en)}   <br />
-              {renderIdiom('En Jp', titles.en_jp)}<br />
-              {renderIdiom('Ja Jp', titles.ja_jp)}
-            </small>
+            <section>
+              <h3>
+                {canonicalTitle}
+              </h3>
+              <p>
+                {description.substring(0, 150)}...
+              </p>
+              <small>
+                {renderIdiom('En',    titles.en)}   <br />
+                {renderIdiom('En Jp', titles.en_jp)}<br />
+                {renderIdiom('Ja Jp', titles.ja_jp)}
+              </small>
+            </section>
           </article>
         )
       })}

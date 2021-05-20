@@ -3,8 +3,39 @@ import styled from 'styled-components'
 const CardWrapper = styled.section`
   display: grid;
   grid-gap: 40px;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   transition: opacity .3s;
+
+  &.column {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+
+    h3 {
+      margin-top: 10px;
+    }
+  }
+
+  &.row {
+    article {
+      display: flex;
+    }
+
+    @media (max-width:499px) {
+      article {
+        flex-direction: column;
+      }
+
+      section {
+        margin-top: 10px;
+      }
+    }
+
+    @media (min-width:500px) {
+      grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+
+      figure {
+        margin-right: 10px;
+      }
+    }
+  }
 
   &.hidden {
     opacity: 0;
@@ -32,7 +63,6 @@ const CardWrapper = styled.section`
     font-family: var(--title-font);
     font-size: 16px;
     letter-spacing: 1px;
-    margin-top: 10px;
   }
 
   p {

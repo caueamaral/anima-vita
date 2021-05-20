@@ -7,9 +7,10 @@ Consulta de animes e mangás à API [Kitsu](//kitsu.docs.apiary.io/) com ReactJS
 ## Criado com ReactJS
 - useState()
 - useEffetc()
-- axios
 - styled-components
+- axios
 - react-spinners
+- classnames
 
 ### Visualizar
 

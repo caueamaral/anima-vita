@@ -1,12 +1,12 @@
 import { useEffect, useState } from 'react'
-import classNames              from 'classnames'
 import axios                   from 'axios'
+import classNames              from 'classnames'
 import CardWrapper             from './styles.js'
 
 function Card(props) {
-  const [cards, setCards]           = useState([])
+  const [cards,      setCards]      = useState([])
   const [visibility, setVisibility] = useState('hidden')
-  const [layout, setLayout]         = useState('column')
+  const [layout,     setLayout]     = useState('column')
 
    useEffect(() => {
     const apiUrl     = 'https://kitsu.io/api/edge/anime'
